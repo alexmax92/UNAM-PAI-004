@@ -23,16 +23,21 @@ int main(int argc, const char * argv[])
     printf("Cada año tiene aproximadamente %f meses.\n\n", MESES);
     
     //--Tipo de Dato ENUM (Enumerado)
-    enum Colores {ROJO=1, AMARILLO = 2, VERDE=3, AZUL};
+    enum Colores {ROJO=1, AMARILLO, VERDE, AZUL};
     printf("ROJO = %d\n", ROJO);
     printf("AMARILLO = %d\n", AMARILLO);
     printf("VERDE = %d\n", VERDE);
     printf("AZUL = %d\n\n", AZUL);
     
     enum Colores Color;
-    Color = AZUL;
-    
-    printf("El AZUL está representado por el número %d y el compilador lo llenó automáticamente.\n", Color);
+    Color = ROJO;
+    printf("El ROJO está representado por el número %d y el compilador lo llenó automáticamente.\n", Color);
+    Color = AMARILLO;
+	printf("El AMARILLO esta representado por el numero: %d y el compilador lo lleno automaticamente.\n\n",Color);
+	Color = AZUL;
+	printf("El AZUL esta representado por el numero: %d y el compilador lo lleno automaticamente.\n\n",Color);
+	Color = VERDE;
+	printf("El VERDE esta representado por el numero: %d y el compilador lo lleno automaticamente.\n\n",Color);
     
     printf("Pi es una constante equivalente a: %Lf\n", PI);
     
